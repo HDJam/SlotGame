@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\Circle_Blue.png" />
+    <None Remove="img\Circle_Green.png" />
+    <None Remove="img\Circle_Orange.png" />
+    <None Remove="img\Circle_Red.png" />
+    <None Remove="img\Circle_Yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\Circle_Blue.png" />
+    <Resource Include="img\Circle_Green.png" />
+    <Resource Include="img\Circle_Orange.png" />
+    <Resource Include="img\Circle_Red.png" />
+    <Resource Include="img\Circle_Yellow.png" />
+  </ItemGroup>
+
+</Project>

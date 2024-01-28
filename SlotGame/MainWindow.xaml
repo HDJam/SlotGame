@@ -1,0 +1,43 @@
+﻿<Window x:Name="window" x:Class="SlotGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlotGame"
+        mc:Ignorable="d"
+        Title="Slot Game" Height="442" Width="442" WindowStartupLocation="CenterScreen" Background="Black" Foreground="White">
+
+    <Canvas x:Name="App" Margin="5,5,5,4">
+        <Canvas x:Name="Stage" MouseUp="PlayArea_Click" HorizontalAlignment="Left" Width="224" Height="226" MaxHeight="226" ClipToBounds="True" Canvas.Left="104" Canvas.Top="10" Background="#FF3A3232">
+
+            <Canvas Width="75" x:Name="Reel1" Canvas.Left="0">
+                <Image x:Name="Grid0x" Canvas.Left="0" Canvas.Top="-75" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Blue.png"/>
+                <Image x:Name="Grid00" Canvas.Left="0" Canvas.Top="0" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Blue.png"/>
+                <Image x:Name="Grid01" Canvas.Left="0" Canvas.Top="75" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Red.png"/>
+                <Image x:Name="Grid02" Canvas.Left="0" Canvas.Top="150" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Yellow.png"/>
+            </Canvas>
+
+            <Canvas x:Name="Reel2" Width="75" Canvas.Left="75">
+                <Image x:Name="Grid1x" Canvas.Left="0" Canvas.Top="-75" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Blue.png"/>
+                <Image x:Name="Grid10" Canvas.Left="0" Canvas.Top="0" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Green.png"/>
+                <Image x:Name="Grid11" Canvas.Left="0" Canvas.Top="75"  Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Orange.png"/>
+                <Image x:Name="Grid12" Canvas.Left="0" Canvas.Top="150"  Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Green.png"/>
+            </Canvas>
+
+            <Canvas x:Name="Reel3" Width="75" Canvas.Left="150">
+                <Image x:Name="Grid2x" Canvas.Left="0" Canvas.Top="-75" Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Blue.png"/>
+                <Image x:Name="Grid20" Canvas.Left="0" Canvas.Top="0"  Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Yellow.png"/>
+                <Image x:Name="Grid21" Canvas.Left="0" Canvas.Top="75"  Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Red.png"/>
+                <Image x:Name="Grid22" Canvas.Left="0" Canvas.Top="150"  Height="74" VerticalAlignment="Center" Width="74"  Source="/img/Circle_Blue.png"/>
+            </Canvas>
+        </Canvas>
+
+        <Button x:Name="PlayButton" HorizontalAlignment="Center" Height="27" VerticalAlignment="Top" Width="140" RenderTransformOrigin="1,1" Foreground="White" Background="Black" Grid.Column="1" Grid.ColumnSpan="2" Click="PlayButton_Click" Canvas.Left="146" Canvas.Top="364" BorderThickness="2,2,2,2" >
+            Play
+        </Button>
+        <Label x:Name="ResultLabel" Content="Click Play!" Canvas.Left="146" Canvas.Top="259" HorizontalAlignment="Center" VerticalAlignment="Top" Width="140" Foreground="White" HorizontalContentAlignment="Center"/>
+    </Canvas>
+
+
+
+</Window>
